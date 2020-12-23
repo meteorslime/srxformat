@@ -1,5 +1,5 @@
 # srxformat
-Format, convert, and combine multiple SRX-800 datalogger output files (and another file containing supplementary information) into a single dataset.
+*Format, convert, and combine multiple SRX-800 datalogger output files (and another file containing supplementary information) into a single dataset.*
 
 The Lotek SRX-800 datalogger scans for pre-programmed VHF frequencies and records signal characteristics (e.g. pulse rate) that can later be converted into measurements of the animal's skin surface temperature. This conversion is performed using an equation provided by the manufacturer, which is unique to each transmitter. The datalogger's raw output consists of tab-separated plaintext files with a .TXT extension.
 
