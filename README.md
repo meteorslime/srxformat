@@ -1,7 +1,7 @@
 # srxformat
 *Format, convert, and combine multiple SRX-800 datalogger output files (and another file containing supplemental information) into a single dataset.*
 
-The Lotek SRX-800 datalogger is a VHF receiver that automatically scans for pre-programmed frequencies and records signal characteristics (e.g. pulse rate) that can later be converted into measurements of the animal's skin surface temperature. This conversion is performed using an equation provided by the manufacturer, which is unique to each transmitter. The datalogger's raw output consists of tab-separated plaintext files with a .TXT extension.
+The Lotek SRX-800 datalogger is a VHF receiver that automatically scans for pre-programmed frequencies and records signal characteristics (e.g. pulse rate) that can later be converted into measurements of an animal's skin surface temperature. Converting pulse rate to temperature requires an equation provided by the manufacturer, which is unique to each transmitter. The datalogger's raw output consists of tab-separated plaintext files with a .TXT extension.
 
 This repo contains scripts that are intended to (mostly) automate the process of formatting these raw output files as R objects, converting the pulse rate to temperature, merging the resulting objects into a single data structure, and performing some other housekeeping tasks (e.g. removing duplicate records, which occur when the datalogger's internal storage is not cleared after a download) to make the dataset available for manipulation and analysis in R.
 
